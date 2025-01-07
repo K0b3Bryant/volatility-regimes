@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+optuna
+ta
+hmmlearn
+scipy
+sklearn
+statsmodels
+pywavelets
