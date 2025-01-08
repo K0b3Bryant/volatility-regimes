@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
-"""
-KAMA and Regime Modeling for Trading Strategies
----
-This script demonstrates a combined approach using a KAMA-based technical signal and regime signals via Markov models.
-"""
 
 from utils import load_data, kama_signals, evaluate_model
 from config import data_files, random_state
+from features_engineering import generate_features
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 
-# === Main Execution ===
 if __name__ == "__main__":
     print("Starting KAMA Model Script")
 
     # Load data
     raw = load_data(data_files)
+
+    # Generate features
+    features, features_fd = generate_features(raw)
+    print("Features generated successfully.")
 
     # Example: Generate KAMA signals
     fast, slow, signal_window = 10, 30, 5
