@@ -1,5 +1,3 @@
-# Configuration File
-
 # File paths for datasets
 data_files = {
     'spx': '/content/SPX.csv',
