@@ -8,3 +8,6 @@ scipy
 sklearn
 statsmodels
 pywavelets
+tsfresh
+tsfracdiff
+
