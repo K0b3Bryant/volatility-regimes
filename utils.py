@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 from ta.momentum import KAMAIndicator
 
-# === Utility Functions ===
-
 def load_data(data_files):
     """Load datasets and preprocess them."""
     spx = pd.read_csv(data_files['spx'], parse_dates=['Date'], index_col=0).sort_index().astype(float)
