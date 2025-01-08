@@ -9,8 +9,6 @@ from tsfracdiff import FractionalDifferentiator
 
 warnings.filterwarnings("ignore")
 
-# === Feature Engineering ===
-
 def generate_features(price_data, window_ideal=5, window_min=5):
     """Generate time series features for the given price data."""
 
